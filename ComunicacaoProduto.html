@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Image/whiterrr.ico">
+    <title>Portefólio</title>
+</head>
+<style>
+
+body {
+    display: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+    height: 100vh;
+    background-color: #101010;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 2rem;
+    }
+
+    .preloader {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 9999;
+        opacity: 0;
+        animation: fadeIn 1s forwards;
+    }
+
+    .preloader-img {
+        width: 300px;
+        height: auto;
+    }
+
+    .hidden {
+        visibility: hidden;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+.top-bar {
+    position: fixed;
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    background-color: #101010;
+    background-size: 0.5;
+    z-index: 1000;
+    border-bottom: 1px solid #4f4f4f;
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    transition: transform 1s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    opacity: 0.9;
+}
+
+.top-bar.show {
+    transform: translate(-50%, 100px);
+}
+
+.top-bar .left img {
+    width: 50%;
+    height: auto;
+    margin-top: 5px;
+    margin-left: 20px;
+}
+
+.top-bar .right {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    width: 50%;
+}
+
+.nav-bar-top {
+    position: relative;
+    bottom: 1.5rem;
+    left: 0;
+    right: 0;
+    width: 100%;
+    border-radius: 4rem;
+    margin-top: 50px;
+    justify-content: flex-end;
+    align-items: flex-end;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-bar-top a {
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #4f4f4f;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar {
+    width: 2px;
+    height: 10px;
+}
+
+
+    .gallery-CP {
+    border-bottom: 1px solid rgb(79, 79, 79);
+    width: 90%;
+    max-width: 1200px;
+    justify-content: space-between;
+    border-collapse: collapse;
+    margin-top: 100px;
+    margin-left: 50px;
+    text-align: left;
+    grid-template-columns: repeat(4, 1fr);
+    display: grid;
+    gap: 20px;
+}
+
+.gallery-CP .gallery {
+    width: 100%;
+    margin-top: 50px;
+    margin-left: 70px;
+    text-align: left;
+}
+
+.gallery-item {
+    transition: transform 0.3s ease;
+    border: 1px solid #4f4f4f;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+.footer-img {
+    position: relative;
+    bottom: 1.5rem;
+    left: 0;
+    right: 0;
+    width: 100%;
+    border-radius: 4rem;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-left: 13px;
+}
+
+.footer-nav {
+    position: relative;
+    bottom: 1.5rem;
+    left: 0;
+    right: 0;
+    width: 100%;
+    border-radius: 4rem;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 20px;
+}
+
+.footer-nav a {
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+</style>
+<body>
+    <div class="preloader" id="preloader">
+        <img src="Image/white.png" alt="Preloader Image" class="preloader-img">
+    </div>
+    <div class="top-bar" id="top-bar">
+        <div class="left">
+            <a href="index.html"><img src="Image/white.png" alt=""></a>
+        </div>
+        <div class="right">
+            <nav class="nav-bar-top">
+                <a href="index.html#projetos">Projetos</a>
+            <a href="index.html#sobre">Sobre</a>
+            <a href="index.html#contactos">Contacta-me</a>
+            </nav>
+        </div>
+    </div>
+    <div class="gallery-CP">
+        <div class="gallery">
+            <a target="_blank" href="Comunicação_Produto/Captura de ecrã 2022-11-08 202611.png">
+                <img src="Comunicação_Produto/Captura de ecrã 2022-11-08 202611.png" alt="" width="200" height="auto" class="gallery-item">
+              </a>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="Comunicação_Produto/Captura de ecrã 2022-11-08 202507.png">
+                <img src="Comunicação_Produto/Captura de ecrã 2022-11-08 202507.png" alt="" width="200" height="auto" class="gallery-item">
+              </a>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="Comunicação_Produto/UmTerçoPágina_Expresso.png">
+                <img src="Comunicação_Produto/UmTerçoPágina_Expresso.png" alt="" width="200" height="auto" class="gallery-item">
+              </a>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="Comunicação_Produto/Página_Expresso.png">
+                <img src="Comunicação_Produto/Página_Expresso.png" alt="" width="200" height="auto" class="gallery-item">
+              </a>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-img">
+        <a href="index.html"><img src="Image/white.png" alt=""></a>
+        </div>
+        <div class="footer-nav">
+            <a href="index.html#projetos">Projetos</a>
+            <a href="index.html#sobre">Sobre</a>
+            <a href="index.html#contactos">Contacta-me</a>
+        </div>
+    </footer>
+    <script>
+        const name = "";
+        const preloader = document.getElementById("preloader");
+        const bodyContent = document.querySelectorAll("body > *:not(#preloader)");
+        const topBar = document.getElementById("top-bar");
+
+        bodyContent.forEach((el) => el.classList.add("hidden"));
+        
+        name.split("").forEach((letter, index) => {
+            let span = document.createElement("span");
+            span.textContent = letter;
+            span.classList.add("letter");
+            span.style.animationDelay = `${index * 0.2}s`;
+            preloader.appendChild(span);
+        });
+
+        setTimeout(() => {
+            preloader.style.display = "none";
+            bodyContent.forEach((el) => el.classList.remove("hidden")); // Exibe o conteúdo da página
+            topBar.classList.add("show");
+        }, 1700);
+    </script>
+</body>
+</html>
