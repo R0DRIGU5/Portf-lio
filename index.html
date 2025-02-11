@@ -436,8 +436,8 @@ h2 {
         <div class="contact-container">
             <form action="" class="contact-form" id="contact-form">
                 <div class="contact">
-                    <input type="text" name="user_name" placeholder="Nome:" required class="contact-input">
-                    <input type="email" name="user_email" placeholder="Email:" required class="contact-input">
+                    <input type="text" name="user_name" placeholder="Nome" required class="contact-input">
+                    <input type="email" name="user_email" placeholder="Email" required class="contact-input">
                 </div>
                 <textarea name="user_message" placeholder="Mensagem" class="contact-input contact-area"></textarea>
                 <br>
@@ -479,12 +479,12 @@ h2 {
         }, 1700);
 
         const contactForm = document.getElementById('contact-form'),
-              contactMessage = document.getElementById('contact-message')
+              contactMessage = document.getElementById('contact-area')
 
         const sendEmail = (e) =>{
             e.preventDefaut()
 
-            emailjs.sendForm('service_mwu5xbl','template_oe7gp7x','contact-form', '8n1VrNQ7zAMyfaFl8')
+            emailjs.sendForm('service_mwu5xbl','template_jbhprb5','contact-form', '8n1VrNQ7zAMyfaFl8')
             .then(() =>{
                 contactMessage.textContent = 'Mensagem enviada com sucesso ✅'
 
