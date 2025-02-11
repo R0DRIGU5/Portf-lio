@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Image/whiterrr.ico">
+    <title>Portfolio</title>
+</head>
+<style>
+    body {
+    display: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+    height: 100vh;
+    background-color: #101010;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 2rem;
+    }
+
+    .preloader {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 9999;
+        opacity: 0;
+        animation: fadeIn 1s forwards;
+    }
+
+    .preloader-img {
+        width: 300px;
+        height: auto;
+    }
+
+    .hidden {
+        visibility: hidden;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+.top-bar {
+    position: fixed;
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    background-color: #101010;
+    background-size: 0.5;
+    z-index: 1000;
+    border-bottom: 1px solid #4f4f4f;
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    transition: transform 1s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    opacity: 0.9;
+}
+
+.top-bar.show {
+    transform: translate(-50%, 100px);
+}
+
+.top-bar .left img {
+    width: 50%;
+    height: auto;
+    margin-top: 5px;
+    margin-left: 20px;
+}
+
+.top-bar .right {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    width: 50%;
+}
+
+.nav-bar-top {
+    position: relative;
+    bottom: 1.5rem;
+    left: 0;
+    right: 0;
+    width: 100%;
+    border-radius: 4rem;
+    margin-top: 50px;
+    justify-content: flex-end;
+    align-items: flex-end;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-bar-top a {
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.content-home {
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    border-collapse: collapse;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.content-left, .content-right {
+    width: 50%;
+    position: relative;
+    margin-top: 50px;
+    display: flex;
+    border-bottom: 1px solid rgb(79, 79, 79);
+}
+
+.content-left {
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    text-align: left;
+    height: 100vh;
+}
+
+.content-left p {
+    font-size: 1.2rem;
+}
+
+.content-left h2 {
+    font-size: 1.5rem;
+}
+
+.content-right {
+    border-left: 1px solid rgb(79, 79, 79);
+}
+
+.content-right .perfil {
+    width: 100%;
+    position: relative;
+    background: var(--conic-gradient);
+    height: 415px;
+    border-radius: 2rem;
+    padding: 1rem;
+    display: grid;
+    overflow: hidden;
+}
+
+.content-right .perfil-img {
+    width: 180px;
+    height: auto;
+    position: absolute;
+    justify-self: center;
+    align-self: flex-end;
+    background-position: center center;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.content-project {
+    border-top: 1px solid rgb(79, 79, 79);
+    border-bottom: 1px solid rgb(79, 79, 79);
+    width: 90%;
+    max-width: 1200px;
+    justify-content: space-between;
+    border-collapse: collapse;
+    margin-top: 50px;
+    margin-left: 50px;
+    text-align: left;
+    grid-template-columns: repeat(3, 1fr);
+    display: grid;
+    gap: 20px;
+}
+
+.content-project .gallery {
+    width: 100%;
+    margin-top: 50px;
+    margin-left: 70px;
+    text-align: left;
+}
+
+.gallery-item {
+    transition: transform 0.3s ease;
+    border: 1px solid #4f4f4f;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+.content-about {
+    border-top: 1px solid rgb(79, 79, 79);
+    border-bottom: 1px solid rgb(79, 79, 79);
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    border-collapse: collapse;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.content-about-left, .content-about-right {
+    width: 50%;
+    position: relative;
+    margin-top: 50px;
+    display: flex;
+    border-bottom: 1px solid rgb(79, 79, 79);
+}
+
+.content-about-left {
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    text-align: left;
+    height: 100vh;
+}
+
+.content-about-left p {
+    font-size: 1.2rem;
+}
+
+.content-about-left h2 {
+    font-size: 1.5rem;
+}
+
+.content-about-right {
+    border-left: 1px solid rgb(79, 79, 79);
+}
+
+.content-about-right .perfil {
+    width: 100%;
+    position: relative;
+    background: var(--conic-gradient);
+    height: 415px;
+    border-radius: 2rem;
+    padding: 1rem;
+    display: grid;
+    overflow: hidden;
+}
+
+.content-about-right .perfil-img {
+    width: 180px;
+    height: auto;
+    position: absolute;
+    justify-self: center;
+    align-self: flex-end;
+    background-position: center center;
+}
+
+.content-contact {
+    border-top: 1px solid rgb(79, 79, 79);
+    border-bottom: 1px solid rgb(79, 79, 79);
+    width: 90%;
+    max-width: 1200px;
+    margin-top: 50px;
+    margin-left: 50px;
+    text-align: left;
+}
+
+.content-contact,
+.contact-form {
+    gap: 1rem;
+}
+
+.contact-form {
+    position: relative;
+    width: 90%;
+    max-width: 1200px;
+    margin-left: 30px;
+}
+
+.contact-input {
+    background-color: var(--container-color);
+    padding: 1.25rem;
+    border-radius: 4rem;
+    color: var(--white-color);
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.contact-input::placeholder {
+    color: var(--text-color);
+}
+
+.contact-area {
+    height: 10rem;
+    border-radius: 1.5rem;
+    color: var(--white-color);
+    resize: none;
+    width: 100%;
+}
+
+.contact-button {
+    cursor: pointer;
+    background-color: var(--container-color);
+    border-radius: 4rem;
+    color: var(--white-color);
+    margin-bottom: 30px;
+}
+
+.footer-img {
+    position: relative;
+    bottom: 1.5rem;
+    left: 0;
+    right: 0;
+    width: 100%;
+    border-radius: 4rem;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.footer-nav {
+    position: relative;
+    bottom: 1.5rem;
+    left: 0;
+    right: 0;
+    width: 100%;
+    border-radius: 4rem;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 20px;
+}
+
+.footer-nav a {
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+</style>
+<body>
+    <div class="preloader" id="preloader">
+        <img src="Image/white.png" alt="Preloader Image" class="preloader-img">
+    </div>
+    <div class="top-bar" id="top-bar">
+        <div class="left">
+            <a href="index.html"><img src="Image/white.png" alt=""></a>
+        </div>
+        <div class="right">
+            <nav class="nav-bar-top">
+                <a href="#projetos">Projetos</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#contactos">Contactos</a>
+            </nav>
+        </div>
+    </div>
+    <div class="content-home">
+        <div class="content-left">
+            <h2>Seja bem-vindo ao meu Portefólio!</h2>
+            <p>Olá! Chamo-me Rodrigo Rodrigues e sou um técnico de multimédia que adora design, audiovisual e tecnologia em geral.</p>
+            <p>Fique à vontade para explorar o meu portfólio e conhecer um pouco mais do meu trabalho!</p>
+            <p>Não hesite em explorar e descobrir. Sinta-se à vontade para entrar em contacto.</p>
+        </div>
+        <div class="content-right">
+            <div class="perfil">
+                <img src="Image/euhome3.png" alt="" class="perfil-img">
+            </div>
+        </div>
+    </div>
+    <h2 id="projetos">Projetos</h2>
+    <div class="content-project">
+        
+        <div class="gallery">
+            <a target="_blank" href="Cartazes/Cartazes.png">
+                <img src="Cartazes/Cartazes.png" alt="" width="200" height="auto" class="gallery-item">
+              </a>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="Comunicação_Produto/Comunicação de Produto.png">
+                <img src="Comunicação_Produto/Comunicação de Produto.png" alt="" width="200" height="auto" class="gallery-item">
+              </a>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="Logos/Logos.png">
+                <img src="Logos/Logos.png" alt="" width="200" height="auto" class="gallery-item">
+              </a>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="Lyric/Lyrics.png">
+                <img src="Lyric/Lyrics.png" alt="" width="200" height="auto" class="gallery-item">
+              </a>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="Tratamento_Imagem/Tratamento de imagem.png">
+                <img src="Tratamento_Imagem/Tratamento de imagem.png" alt="" width="200" height="auto" class="gallery-item">
+              </a>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="VSCode/WebSites.png">
+                <img src="VSCode/WebSites.png" alt="" width="200" height="auto" class="gallery-item">
+              </a>
+        </div>
+    </div>
+    <h2 id="sobre">Sobre</h2>
+    <div class="content-about">
+        <div class="content-about-left">
+            <h2>Seja bem-vindo ao meu Portefólio!</h2>
+            <p>Olá! Chamo-me Rodrigo Rodrigues e sou um técnico de multimédia que adora design, audiovisual e tecnologia em geral.</p>
+            <p>Fique à vontade para explorar o meu portfólio e conhecer um pouco mais do meu trabalho!</p>
+            <p>Não hesite em explorar e descobrir. Sinta-se à vontade para entrar em contacto.</p>
+        </div>
+        <div class="content-about-right">
+            <div class="perfil">
+                <img src="Image/eu2.png" alt="" class="perfil-img">
+            </div>
+        </div>
+    </div>
+    <h2 id="contactos">Contactos</h2>
+    <div class="content-contact">
+        <div class="contact-container">
+            <form action="" class="contact-form" id="contact-form">
+                <div class="contact">
+                    <input type="text" name="user_name" placeholder="Nome:" required class="contact-input">
+                    <input type="email" name="user_email" placeholder="Email:" required class="contact-input">
+                </div>
+                <textarea name="user_message" placeholder="Mensagem" class="contact-input contact-area"></textarea>
+                <br>
+                <button type="submit" class="button contact-button">Enviar Mensagem</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-img">
+        <a href="index.html"><img src="Image/white.png" alt=""></a>
+        </div>
+        <div class="footer-nav">
+            <a href="#projetos">Projetos</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#contactos">Contactos</a>
+        </div>
+    </footer>
+
+    <script>
+        const name = "";
+        const preloader = document.getElementById("preloader");
+        const bodyContent = document.querySelectorAll("body > *:not(#preloader)");
+        const topBar = document.getElementById("top-bar");
+
+        bodyContent.forEach((el) => el.classList.add("hidden"));
+        
+        name.split("").forEach((letter, index) => {
+            let span = document.createElement("span");
+            span.textContent = letter;
+            span.classList.add("letter");
+            span.style.animationDelay = `${index * 0.2}s`;
+            preloader.appendChild(span);
+        });
+
+        setTimeout(() => {
+            preloader.style.display = "none";
+            bodyContent.forEach((el) => el.classList.remove("hidden")); // Exibe o conteúdo da página
+            topBar.classList.add("show");
+        }, 1700);
+
+        const contactForm = document.getElementById('contact-form'),
+              contactMessage = document.getElementById('contact-message')
+
+        const sendEmail = (e) =>{
+            e.preventDefaut()
+
+            emailjs.sendForm('service_mwu5xbl','template_oe7gp7x','contact-form', '8n1VrNQ7zAMyfaFl8')
+            .then(() =>{
+                contactMessage.textContent = 'Mensagem enviada com sucesso ✅'
+
+                setTimeout(() =>{
+                    contactMessage.textContent = ''
+                }, 5000)
+
+                contactForm.rest()
+            }, () =>{
+                contactMessage.textContent = 'Mensagem não enviada (erro no envio) ❌'
+            })
+        }
+        contactForm.addEventListener('submit', sendEmail)
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</body>
+</html>

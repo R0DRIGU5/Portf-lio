@@ -1,0 +1,63 @@
+body{
+    background-color: black;
+}
+
+.menu-principal{
+    background-color: blueviolet;
+    height: 60px;
+}
+
+.menu, ul, li{
+    display: inline-block;
+    float: center;
+    margin-left: 50px;
+    font-family: fantasy;
+    color: darkblue;
+}
+
+.menu, ul, li, a {
+    color: darkblue;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+.menu{
+    width: 50%;
+    float: center;
+
+}
+
+.main{
+    width: 980px;
+    float: left;
+    position: relative;
+}
+
+.logo{
+    float: left;
+    padding: 15px;
+    width: 25%;
+}
+
+.pesquise{
+    float: right;
+    text-align: center;
+    width: 30%;
+    font-family: fantasy;
+    
+}
+
+.pesquise, input{
+    height: 40px;
+    padding: 10px;
+    width: 700px;
+    margin-top: 10px;
+    margin-right: 15px;
+}
+
+.img{
+    width: 1920px;
+    height: 1080px;
+    margin-top: 180px;
+    margin-left: 500px;
+}

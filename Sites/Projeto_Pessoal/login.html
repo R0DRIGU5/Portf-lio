@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R13</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <form class="form" action="#">
+        <div class="card">
+<div class="card-top">
+    <img class="imglogin" src="imagem/user.png" alt="">
+    <h2 class="title">Login</h2>
+</div>
+
+<div class="card-group">
+    <label>Email</label>
+    <input type="email" name="email" placeholder="Email" id="login", required>
+</div>
+
+<div class="card-group">
+    <label>Senha</label>
+    <input type="password" name="senha" placeholder="Senha" id="senha", required>
+</div>
+
+<div class="card-group btn">
+    <button type="submit"  onclick="logar(); return false">ENTRAR</button>
+</div>
+        </div>
+    </form>
+
+<script>
+
+    function logar(){
+        
+      var login = document.getElementById('login').value;
+      var senha = document.getElementById('senha').value;
+
+      if(login == "rodrigues13@gmail.com" && senha == "R13"){
+        location.href="home.html"
+      }else{
+        alert('Usuario ou senha incorretos');
+      }
+    }
+
+</script>
+
+</body>
+</html>

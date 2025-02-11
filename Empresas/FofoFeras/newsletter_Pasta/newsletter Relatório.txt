@@ -1,0 +1,47 @@
+Relatório de pacote
+
+-----------------------------------------------------------------------------
+Documento:
+Nome: newsletter.ai
+Modo de cor: Cor CMYK
+Perfil de cor: Coated FOGRA39 (ISO 12647-2:2004)
+Unidades da régua: centímetros
+Dimensões da prancheta: 60 cm x 60 cm
+Mostrar imagens no modo de contorno: DESATIVADO
+Realçar fontes substituídas: DESATIVADO
+Realçar glifos substituídos: DESATIVADO
+Preservar capacidade de edição do texto
+Simular papel colorido: DESATIVADO
+
+-----------------------------------------------------------------------------
+Objetos de cor especial:
+
+-----------------------------------------------------------------------------
+Fontes ausentes:NENHUM
+
+-----------------------------------------------------------------------------
+Fontes protegidas que não foram empacotadas:NENHUM
+
+-----------------------------------------------------------------------------
+Fontes:
+Forte (OTF)
+Source Sans Variable Regular (OTF)
+
+-----------------------------------------------------------------------------
+Fontes incorporadas:
+NENHUM
+
+-----------------------------------------------------------------------------
+Vínculos ausentes:
+NENHUM
+
+-----------------------------------------------------------------------------
+Imagens vinculadas:
+
+C:\Users\Rodrigo\Downloads\devil-g2662a1c69_1280.png
+Tipo: CMYK transparente
+Bits por pixel: 40
+Canais: 5
+Tamanho: 6812K, 1280 por 1090 pixels
+Dimensões: 1327,738 por 1700,787 pontos 
+Resolução: 69,411 por 46,143 pixels por polegada

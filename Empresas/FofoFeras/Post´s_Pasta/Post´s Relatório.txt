@@ -1,0 +1,74 @@
+Relatório de pacote
+
+-----------------------------------------------------------------------------
+Documento:
+Nome: Post´s.ai
+Modo de cor: Cor CMYK
+Perfil de cor: Coated FOGRA39 (ISO 12647-2:2004)
+Unidades da régua: pixels
+Dimensões da prancheta: 3061,4172 px x 3061,4172 px
+Mostrar imagens no modo de contorno: DESATIVADO
+Realçar fontes substituídas: DESATIVADO
+Realçar glifos substituídos: DESATIVADO
+Preservar capacidade de edição do texto
+Simular papel colorido: DESATIVADO
+
+-----------------------------------------------------------------------------
+Objetos de cor especial:
+
+-----------------------------------------------------------------------------
+Fontes ausentes:NENHUM
+
+-----------------------------------------------------------------------------
+Fontes protegidas que não foram empacotadas:NENHUM
+
+-----------------------------------------------------------------------------
+Fontes:
+Source Sans Variable Regular (OTF)
+Forte (OTF)
+
+-----------------------------------------------------------------------------
+Fontes incorporadas:
+NENHUM
+
+-----------------------------------------------------------------------------
+Vínculos ausentes:
+NENHUM
+
+-----------------------------------------------------------------------------
+Imagens vinculadas:
+
+C:\Users\Rodrigo\Downloads\devil-gc60dd4e4f_1280.png
+Tipo: CMYK transparente
+Bits por pixel: 40
+Canais: 5
+Tamanho: 7218K, 1155 por 1280 pixels
+Dimensões: 1817,578 por 2014,286 pontos 
+Resolução: 45,753 por 45,753 pixels por polegada
+
+
+C:\Users\Rodrigo\Downloads\devil-g2662a1c69_1280.png
+Tipo: CMYK transparente
+Bits por pixel: 40
+Canais: 5
+Tamanho: 6812K, 1280 por 1090 pixels
+Dimensões: 2329,164 por 1983,429 pontos 
+Resolução: 39,568 por 39,568 pixels por polegada
+
+
+C:\Users\Rodrigo\Downloads\assets-gfe54f96ed_1280.png
+Tipo: CMYK transparente
+Bits por pixel: 40
+Canais: 5
+Tamanho: 6431K, 1029 por 1280 pixels
+Dimensões: 1579,662 por 2086,194 pontos 
+Resolução: 46,901 por 44,176 pixels por polegada
+
+
+C:\Users\Rodrigo\Downloads\orc-g9a1d067dd_1280.png
+Tipo: CMYK transparente
+Bits por pixel: 40
+Canais: 5
+Tamanho: 5212K, 1280 por 834 pixels
+Dimensões: 2350,703 por 1531,63 pontos 
+Resolução: 39,205 por 39,205 pixels por polegada
